@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script>
+        window.MSInputMethodContext && document.documentMode && document.write('<script src="assets/js/ie11CustomProperties.js"><\x2fscript>');
+    </script>
+    <script src="assets/js/svgInject.min.js"></script>
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <title>
+        Ailet
+    </title>
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f001e;
+        }
+
+        .intro {
+            transform: translateX(100%);
+        }
+
+
+        @media screen and (max-width: 1024px) {
+            .intro {
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+
+<body class="no-touch" ontouchstart="">
+    <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden; ">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="cross" viewBox="0 0 16.03 16.66" xmlns="http://www.w3.org/2000/svg"><defs><style>.acls-1{isolation:isolate}</style></defs><path class="acls-1" d="M16 1.68L14.41 0 8 6.65 1.61 0 0 1.68l6.4 6.65L0 15l1.61 1.67L8 10l6.4 6.65L16 15 9.63 8.33z"/></symbol><symbol viewBox="0 0 15.3 27" id="dollar" xmlns="http://www.w3.org/2000/svg"><path d="M6.39 24.18a6.83 6.83 0 01-4.65-2A8 8 0 010 17.25h3a5.27 5.27 0 001 3 3.7 3.7 0 002.43 1.23v-7.2q-1.14-.3-2.25-.69a8 8 0 01-1.95-1.08 5.41 5.41 0 01-1.42-1.62A5.26 5.26 0 01.3 8.46a5.2 5.2 0 011.53-3.78 7.16 7.16 0 014.56-1.86V0h2.52v2.82a6.46 6.46 0 014.44 1.89A7.2 7.2 0 0115 9.15h-3a5.2 5.2 0 00-.93-2.49 3.22 3.22 0 00-2.16-1.11v6.6q1.17.33 2.31.75a7.1 7.1 0 012 1.08 4.69 4.69 0 011.47 1.71 5.24 5.24 0 01.57 2.58 5.51 5.51 0 01-1.59 4 7.27 7.27 0 01-4.8 1.89V27H6.39zm6-5.94a2.53 2.53 0 00-.27-1.2 2.6 2.6 0 00-.75-.87 4.1 4.1 0 00-1.08-.66q-.63-.27-1.35-.51v6.48a4.13 4.13 0 002.61-1.14 3 3 0 00.81-2.1zM3.24 8.46a2.2 2.2 0 00.9 1.89 7.6 7.6 0 002.25 1.08V5.55A4 4 0 004 6.6a2.66 2.66 0 00-.76 1.86z"/></symbol><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 26 26" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M15.33 0v2.23h7L7.24 17.31l1.57 1.57L23.75 4v6.82H26V0z"/><path d="M23.77 14.18v9.59H2.23V2.23h9V0H0v26h26V14.18z"/></symbol><symbol viewBox="0 0 28 25.09" id="message" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v16h4v5.09l1.63-1.31L10.34 16H20V0zm2 2h16v12H9.66l-.28.22L6 16.91V14H2zm20 2v2h4v12h-4v2.91L18.34 18h-7.5l-2.5 2h9.32L24 25.09V20h4V4z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol viewBox="0 0 25.5 16.5" id="persons" xmlns="http://www.w3.org/2000/svg"><path d="M25.5 16.5H0v-3.7c0-2.42 3.48-3.71 6.2-4.1a4.51 4.51 0 01-2.93-4.2 4.57 4.57 0 019.14 0 4.51 4.51 0 01-2.93 4.2 14.15 14.15 0 013.27.87A14.42 14.42 0 0116 8.7a4.51 4.51 0 01-2.93-4.2 4.57 4.57 0 019.14 0 4.51 4.51 0 01-2.91 4.2c2.72.39 6.2 1.68 6.2 4.1zM15.08 15H24v-2.2c0-1.51-3.84-2.73-6.34-2.73a12.81 12.81 0 00-3.61.62 5 5 0 01.88 1.94 7.16 7.16 0 01.15 2.37zM1.5 15h12.07a5.76 5.76 0 00-.1-2 3.3 3.3 0 00-1.05-1.85l-.11-.15a12.39 12.39 0 00-4.47-.95c-2.5 0-6.34 1.22-6.34 2.73zM17.66 1.5a3 3 0 00-3.07 3 3.07 3.07 0 006.14 0 3 3 0 00-3.07-3zm-9.82 0a3 3 0 00-3.07 3 3.07 3.07 0 006.14 0 3 3 0 00-3.07-3z"/></symbol><symbol id="pin" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"><defs><style>.hcls-1,.hcls-2{fill:#7744d2;isolation:isolate}.hcls-1{opacity:.09}.hcls-2{opacity:.7}</style></defs><circle class="hcls-1" cx="22" cy="22" r="22"/><circle class="hcls-2" cx="22" cy="22" r="12"/></symbol><symbol viewBox="0 0 39 17.76" id="trend" xmlns="http://www.w3.org/2000/svg"><path d="M35 0v1.42h1.7L33 5.39l-2-2.13-3.24 3.35a1.8 1.8 0 00-.86-.22 2.08 2.08 0 00-2 2.13 2.25 2.25 0 00.25 1l-3.51 4.13a2 2 0 00-.78-.16L18.1 5.88a2.17 2.17 0 00.73-1.62 2 2 0 10-4 0 2.63 2.63 0 00.06.49l-4.25 3.51a2 2 0 00-1.23-.45 2 2 0 00-1.89 1.42H3.91A2 2 0 002 7.81a2.08 2.08 0 00-2 2.13 2.09 2.09 0 002 2.14 2 2 0 001.89-1.43h3.63a2 2 0 001.89 1.43 2.08 2.08 0 002-2.14 2 2 0 00-.06-.48l4.21-3.52a2 2 0 001.23.45L19.55 14a2.16 2.16 0 00-.72 1.62 2 2 0 104 0 2.13 2.13 0 00-.25-1l3.51-4.13a1.85 1.85 0 00.78.16 2.07 2.07 0 002-2.13 2.16 2.16 0 00-.2-.91l2.22-2.34L33 7.4l4.71-5v1.86H39V0zM2 10.65a.71.71 0 010-1.42.71.71 0 010 1.42zm7.39 0a.71.71 0 010-1.42.71.71 0 010 1.42zm6.73-6.39a.67.67 0 11.67.71.69.69 0 01-.65-.71zm4.7 12.08a.71.71 0 11.68-.71.69.69 0 01-.66.71zm6.08-7.11a.71.71 0 11.67-.71.69.69 0 01-.67.71z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol></svg>    </div>
+
+    <div class="side-screen">
+        <div class="side-screen-inner">
+            <div class="side-screen-inner__video-container">
+                <video class="lazyload" muted="" data-autoplay="" loop playsinline data-poster="img/video-poster.jpg"
+                    preload="none">
+                    <source src="assets/videos/video.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+
+            <div class="side-screen-text">
+                From image to insight
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page-content">
+        <div class="menu">
+            <div class="menu__sphere-container">
+                <video class="lazyload" muted="" data-autoplay="" loop playsinline data-poster="img/video-poster.jpg"
+                    preload="none">
+                    <source src="assets/videos/video.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="menu__inner">
+                <div class="container">
+                    <div class="menu__row">
+                        <div class="menu__left-col">
+                            <nav class="menu__nav">
+                                <a href="#" class="menu__nav-link" target="_blank">
+                                    about us
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon icon-link">
+                                        <use xlink:href="#link" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="menu__nav-link" target="_blank">
+                                    What we do
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon icon-link">
+                                        <use xlink:href="#link" />
+                                    </svg>
+                                </a>
+                                <a href="#to-overview" class="menu__nav-link">
+                                    Solution overview
+                                </a>
+                                <a href="#to-why" class="menu__nav-link">
+                                    Why ailet?
+                                </a>
+                                <a href="#to-partners" class="menu__nav-link">
+                                    Trusted Partners
+                                </a>
+                                <a href="#to-contacts" class="menu__nav-link">
+                                    Contacts
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="menu__right-col">
+                            <div class="menu__contacts">
+                                <div class="menu__contacts-item">
+                                    <h4 class="menu__contacts-item-heading">
+                                        US HQ
+                                    </h4>
+                                    <div class="menu__contacts-item-text">
+                                        9 The Green, Ste A, City of Dover County of Kent,
+                                        zip code 19901, Delaware, the United States of America
+                                        tel: <a href="tel:+1 (302) 608-9033">+1 (302) 608-9033</a>
+                                    </div>
+                                </div>
+                                <div class="menu__contacts-item">
+                                    <h4 class="menu__contacts-item-heading">
+                                        Office EU
+                                    </h4>
+                                    <div class="menu__contacts-item-text">
+                                        Pasilankatu 2, 00240 Helsinki, Finland
+                                        <a href="tel:+358 (0) 9 3158 9580">+358 (0) 9 3158 9580</a>
+                                    </div>
+                                </div>
+                                <div class="menu__contacts-item">
+                                    <h4 class="menu__contacts-item-heading">
+                                        Office Turkey & Middle East
+                                    </h4>
+                                    <h4 class="menu__contacts-item-heading">
+                                        Office Brazil & Latin America
+                                    </h4>
+
+                                </div>
+
+                                <div class="menu__contacts-item">
+                                    <h4 class="menu__contacts-item-heading">
+                                        R&D Office Moscow
+                                    </h4>
+                                    <div class="menu__contacts-item-text">
+                                        143026, Moscow, Bolshoy boulevard 42/1, Skolkovo center territory
+                                        tel: <a href="tel:+7 (499) 550-34-63">+7 (499) 550-34-63</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+
+
+            <div class="contact-form__inner">
+                <div class="container">
+                    <div class="contact-form__row">
+                        <div class="contact-form__left-col">
+                            <div class="contact-form__sphere">
+                                <div class="contact-form__sphere-container">
+                                    <video class="lazyload" muted="" data-autoplay="" loop playsinline
+                                        data-poster="img/video-poster.jpg" preload="none">
+                                        <source src="assets/videos/video.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="contact-form__right-col">
+                            <h2 class="contact-form__heading">
+                                How can we help you?
+                            </h2>
+                            <form action="/" method="POST" class="contact-form__form" data-need-validation
+                                id="contact-form">
+                                <div class="contact-form__form-input-wrapper">
+                                    <input type="text" class="contact-form__form-input" id="firstname"
+                                        placeholder="First name" autocomplete="not" required>
+                                    <label for="firstname" class="contact-form__form-input-label">First name</label>
+                                </div>
+                                <div class="contact-form__form-input-wrapper">
+                                    <input type="text" class="contact-form__form-input" id="jobtitle"
+                                        placeholder="Job title" autocomplete="not">
+                                    <label for="jobtitle" class="contact-form__form-input-label">Job title</label>
+                                </div>
+                                <div class="contact-form__form-input-wrapper">
+                                    <input type="email" class="contact-form__form-input" id="email" placeholder="E-mail"
+                                        autocomplete="not" required>
+                                    <label for="email" class="contact-form__form-input-label">E-mail</label>
+                                </div>
+                                <div class="contact-form__form-input-wrapper">
+                                    <input type="text" class="contact-form__form-input" id="companyname"
+                                        placeholder="Company name" autocomplete="not" required>
+                                    <label for="companyname" class="contact-form__form-input-label">Company name</label>
+                                </div>
+                                <div class="contact-form__form-input-wrapper">
+                                    <input type="tel" class="contact-form__form-input" id="phone"
+                                        placeholder="Phone number" autocomplete="not" required>
+                                    <label for="phone" class="contact-form__form-input-label">Phone number</label>
+                                </div>
+                                <div class="contact-form__form-input-wrapper">
+                                    <div class="contact-form__custom-select">
+
+
+                                        <select name="industry" class="js-custom-select">
+                                            <option value="" placeholder>
+                                                Industry
+                                            </option>
+                                            <option value="Construction">
+                                                Construction
+                                            </option>
+                                            <option value="Sales">
+                                                Sales
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="contact-form__form-input-wrapper" id="whoare-wrapper">
+                                    <div class="contact-form__custom-select">
+
+
+                                        <select name="whoare" class="js-custom-select" required
+                                            data-parsley-class-handler="#whoare-wrapper"
+                                            data-parsley-errors-container="#whoare-wrapper"
+                                            data-parsley-trigger="change">
+                                            <option value="" placeholder>
+                                                Who are you?
+                                            </option>
+                                            <option value="Person">
+                                                Person
+                                            </option>
+                                            <option value="Company">
+                                                Company
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="contact-form__form-input-wrapper">
+                                    <div class="contact-form__custom-select">
+
+
+                                        <select name="country" class="js-custom-select">
+                                            <option value="" placeholder>
+                                                Country
+                                            </option>
+                                            <option value="Albania">
+                                                Albania
+                                            </option>
+                                            <option value="Albania">
+                                                Albania
+                                            </option>
+                                            <option value="Albania">
+                                                Albania
+                                            </option>
+                                            <option value="Albania">
+                                                Albania
+                                            </option>
+                                            <option value="Albania">
+                                                Albania
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="contact-form__form-input-wrapper contact-form__form-input-wrapper--fullwidth">
+                                    <input type="text" class="contact-form__form-input" id="message"
+                                        placeholder="Message" autocomplete="not">
+                                    <label for="message" class="contact-form__form-input-label">Message</label>
+                                </div>
+
+                                <button type="submit" class="contact-form__form-submit" data-text="Send">
+                                    <span class="contact-form__form-submit-text">
+                                        Send
+                                    </span>
+
+                                </button>
+                                <div
+                                    class="contact-form__form-input-wrapper contact-form__form-input-wrapper--centered">
+                                    <label class="contact-form__checkbox">
+                                        <input type="checkbox" name="policy" class="contact-form__checkbox-input"
+                                            value="Y" checked required>
+                                        <span class="contact-form__checkbox-mark">
+
+                                        </span>
+                                        I give on data submission
+                                    </label>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="contact-form__success">
+                <div class="contact-form__success-sphere">
+                    <video class="lazyload" muted="" data-autoplay="" loop playsinline
+                        data-poster="img/video-poster.jpg" preload="none">
+                        <source src="assets/videos/video.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="contact-form__success-content">
+                    <h3 class="contact-form__success-heading">
+                        Thank you, your<br> application has been sent
+                    </h3>
+                    <a href="#" class="contact-form__success-back-link" data-text="Home page">
+                        <span class="contact-form__success-back-link-text">
+                            Home page
+                        </span>
+
+                    </a>
+                </div>
+            </div>
+            <button class="contact-form__close-btn js-form-close">
+                <svg width="14" height="14" aria-hidden="true" class="icon icon-cross">
+                    <use xlink:href="#cross" />
+                </svg>
+            </button>
+        </div>
+        <header class="page-header">
+            <div class="container">
+                <div class="page-header__row">
+                    <div class="page-header__left-col">
+                        <div class="page-header__logo">
+                            <img src="img/logo-full-dark.svg" alt="" class="page-header__logo-image" width="80">
+                            <img src="img/logo-full-light.svg" alt="" class="page-header__logo-image page-header__logo-image--white" width="80">
+                        </div>
+                    </div>
+        
+                    <div class="page-header__right-col">
+                        <a href="#" class="page-header__menu-link">
+                            <span class="page-header__menu-link-burger">
+        
+                            </span>
+                            Menu
+                        </a>
+        
+                        <a href="#" class="page-header__contact-us js-form-open">
+                            
+                            <svg width="14" height="14" aria-hidden="true"
+                                class="icon icon-message">
+                                <use xlink:href="#message" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page-main">
+
+<section class="intro js-key-scrolling-block">
+
+    <div class="container">
+        <div class="intro__content">
+            <div class="intro__shape">
+                <img src="img/shape.svg" alt="" class="intro__shape-image">
+            </div>
+            <div class="intro__row">
+                <div class="intro__left-col">
+                    <div class="intro__text">
+                        We deliver <em>sales efficiency in retail</em><br> through innovation, amazing<br> products and
+                        practices.
+                    </div>
+                    <div class="intro__subtext">
+                        That helps to keep products on shelf and makes your<br> customers pleased
+                    </div>
+                    <a href="#" class="intro__link js-form-open" data-text="Make your store perfect">
+                        <span class="intro__link-text">
+                            Make your store perfect
+                        </span>
+                    </a>
+                </div>
+                <div class="intro__right-col">
+                    <ul class="intro__features">
+                        <li class="intro__features-item">
+                            <h4 class="intro__features-item-key">
+                                Shelf check is
+                            </h4>
+                            <div class="intro__features-item-value">
+                                80% faster
+                            </div>
+                        </li>
+                        <li class="intro__features-item">
+                            <h4 class="intro__features-item-key">
+                                Shelf data accuracy is
+                            </h4>
+                            <div class="intro__features-item-value">
+                                over 95%
+                            </div>
+                        </li>
+                        <li class="intro__features-item">
+                            <h4 class="intro__features-item-key">
+                                Data
+                            </h4>
+                            <div class="intro__features-item-value">
+                                high reliability
+                            </div>
+                            <div class="intro__features-remark">
+                                comparing with manual retail audit
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="questions js-key-scrolling-block">
+    <div class="container">
+        <div class="questions__content">
+
+
+            <div class="questions__intro-text">
+                Everyday CPG companes face billion dollar<br> questions
+
+                <svg width="18" height="18" aria-hidden="true" class="icon icon-dollar">
+                    <use xlink:href="#dollar" />
+                </svg>
+            </div>
+            <div class="questions__actual-questions">
+
+                <img src="img/question.png" alt="" class="questions__actual-questions-symbol">
+                <ul class="questions__items">
+                    <li class="questions__item">
+                        What is my share of shelf?
+                    </li>
+                    <li class="questions__item">
+                        What is my on shelf availability level?
+                    </li>
+                    <li class="questions__item">
+                        What is my planogram compliance?
+                    </li>
+                    <li class="questions__item">
+                        What is my competitive index?
+                    </li>
+                </ul>
+            </div>
+            <div class="questions__benefits">
+                <div class="questions__benefits-item">
+                    <h4 class="questions__benefits-item-key">
+                        For Retail
+                    </h4>
+                    <div class="questions__benefits-item-value">
+                        Monitor every shelf in every store to increase efficiency and sales
+                    </div>
+                </div>
+                <div class="questions__benefits-item">
+                    <h4 class="questions__benefits-item-key">
+                        For CPG
+                    </h4>
+                    <div class="questions__benefits-item-value">
+                        Optimize in-store execution and drive merchandising excellence
+                    </div>
+                </div>
+            </div>
+            <div class="questions__slogan">
+                Our vision is to make sales<br> operations more strategic<br> and dynamic
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ai js-key-scrolling-block">
+    <div class="container">
+        <div class="ai__card">
+            <img src="img/ai-bg.svg" alt="" class="ai__card-bg">
+            <h2 class="ai__card-heading">
+                Put AI inside your Sales Effectiveness Process.
+            </h2>
+            <div class="ai__card-text">
+                Our Ailet Platform driven by visual recognition and artificial intelligence can become one version of
+                truth. Motivate your sales forces based
+                on real sales drivers and KPIs.
+            </div>
+            <a href="#" class="ai__card-link js-form-open" data-text="Request a demo">
+                <span class="ai__card-link-text">
+                    Request a demo
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="how-it-works js-key-scrolling-block" id="overview">
+    <div class="container">
+        <div class="how-it-works__items">
+            <div class="how-it-works__item">
+                <div class="how-it-works__item-left-col">
+                    <div class="how-it-works__item-images">
+
+                        <div class="how-it-works__item-video-wrapper">
+                            <video class="lazyload" muted="" data-autoplay="" loop playsinline
+                                data-poster="img/video-poster.jpg" preload="none">
+                                <source src="assets/videos/video.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="how-it-works__item-right-col">
+                    <div class="how-it-works__item-text-content">
+                        <div class="how-it-works__item-label">
+                            Ailet AI
+                        </div>
+                        <div class="how-it-works__item-text-block">
+                            <h3 class="how-it-works__item-large-heading">
+                                How<br> solution<br> works?
+                            </h3>
+                            <div class="how-it-works__item-text">
+                                Save time&reduce costs while<br> up-lift your sales
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="how-it-works__item">
+                <div class="how-it-works__item-left-col">
+                    <div class="how-it-works__item-images">
+                        <div class="how-it-works__item-video-wrapper">
+                            <video class="lazyload" muted="" data-autoplay="" loop playsinline
+                                data-poster="img/video-poster.jpg" preload="none">
+                                <source src="assets/videos/video.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img src="img/how-it-works/phone.png" alt=""
+                            class="how-it-works__item-image how-it-works__item-image how-it-works__item-image--phone how-it-works__item-image--static">
+                        <img src="img/how-it-works/monitors.png" alt="" class="how-it-works__item-image">
+                    </div>
+                </div>
+                <div class="how-it-works__item-right-col">
+                    <div class="how-it-works__item-text-content">
+                        <div class="how-it-works__item-label">
+                            Stage 1
+                        </div>
+                        <div class="how-it-works__item-text-block">
+                            <h3 class="how-it-works__item-normal-heading">
+                                Take a photo in store<br> using IR application
+                            </h3>
+                            <div class="how-it-works__item-dull-text">
+                                Shelf photos taken by your reps are uploaded to the cloud, where AI converts them
+                                accurately
+                                and instantly into shelf data (product, price, promotion, placement)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="how-it-works__item">
+                <div class="how-it-works__item-left-col">
+                    <div class="how-it-works__item-images">
+                        <div class="how-it-works__item-video-wrapper">
+                            <video class="lazyload" muted="" data-autoplay="" loop playsinline
+                                data-poster="img/video-poster.jpg" preload="none">
+                                <source src="assets/videos/video.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img src="img/how-it-works/phone-2.png" alt=""
+                            class="how-it-works__item-image how-it-works__item-image how-it-works__item-image--phone how-it-works__item-image--static">
+                        <img src="img/how-it-works/monitors-2.png" alt="" class="how-it-works__item-image">
+                    </div>
+                </div>
+                <div class="how-it-works__item-right-col">
+                    <div class="how-it-works__item-text-content">
+                        <div class="how-it-works__item-label">
+                            Stage 2
+                        </div>
+                        <div class="how-it-works__item-text-block">
+                            <h3 class="how-it-works__item-normal-heading">
+                                Images are recognized quickly and report
+                                is generated
+                            </h3>
+                            <div class="how-it-works__item-dull-text">
+                                Best shelf activity information is communicated to locations in real time, and instant
+                                visibility of in-store retail is made available to corporate customers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="how-it-works__more">
+            <a href="#" class="how-it-works__more-link js-form-open" data-text="We have more to say about our technologies">
+                <span class="how-it-works__more-link-text">
+                    We have more to say about our technologies
+                </span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="solutions js-key-scrolling-block">
+    <div class="container">
+        <h2 class="solutions__heading">
+            Solutions to improve<br> efficiency
+
+            <svg width="18" height="18" aria-hidden="true" class="icon icon-trend">
+                <use xlink:href="#trend" />
+            </svg>
+        </h2>
+
+        <div class="solutions__row">
+            <div class="solutions__left-col">
+                <div class="solutions__images">
+                    <div class="solutions__images-container">
+                        <img src="img/solutions-1.jpg" alt="" class="solutions__image">
+                        <img src="img/solutions-2.jpg" alt="" class="solutions__image">
+                        <img src="img/solutions-1.jpg" alt="" class="solutions__image">
+                        <img src="img/solutions-2.jpg" alt="" class="solutions__image">
+                    </div>
+                </div>
+            </div>
+            <div class="solutions__right-col">
+                <div class="solutions__accordions">
+                    <div class="solutions__accordion">
+                        <div class="solutions__accordion-btn">
+                            Ailet mobile app capabilities
+
+                            <span class="solutions__accordion-btn-plus">
+
+                            </span>
+                        </div>
+                        <div class="solutions__accordion-content">
+                            <div class="solutions__accordion-content-inner">
+                                <ol>
+                                    <li>
+                                        In Store Task management (Mobile field sales force user can get a task for each
+                                        store visit)
+                                    </li>
+                                    <li>
+                                        Photo quality checks (User can take a high quality photo of the shelf with
+                                        built-in guidelines)
+                                    </li>
+                                    <li>
+                                        Shelf & Store KPIs analytics (User gets calculated KPIs in real time and can
+                                        improve them during same visit)
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solutions__accordion">
+                        <div class="solutions__accordion-btn">
+                            AI Driven Data Management platform
+
+                            <span class="solutions__accordion-btn-plus">
+
+                            </span>
+                        </div>
+                        <div class="solutions__accordion-content">
+                            <div class="solutions__accordion-content-inner">
+                                <ol>
+                                    <li>
+                                        In Store Task management (Mobile field sales force user can get a task for each
+                                        store visit)
+                                    </li>
+                                    <li>
+                                        Photo quality checks (User can take a high quality photo of the shelf with
+                                        built-in guidelines)
+                                    </li>
+                                    <li>
+                                        Shelf & Store KPIs analytics (User gets calculated KPIs in real time and can
+                                        improve them during same visit)
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solutions__accordion">
+                        <div class="solutions__accordion-btn">
+                            API & DeepLink integration (Our solution can be seamlessly integrated in 1 week into any
+                            Salesforce Automation Platform)
+
+                            <span class="solutions__accordion-btn-plus">
+
+                            </span>
+                        </div>
+                        <div class="solutions__accordion-content">
+                            <div class="solutions__accordion-content-inner">
+                                <ol>
+                                    <li>
+                                        In Store Task management (Mobile field sales force user can get a task for each
+                                        store visit)
+                                    </li>
+                                    <li>
+                                        Photo quality checks (User can take a high quality photo of the shelf with
+                                        built-in guidelines)
+                                    </li>
+                                    <li>
+                                        Shelf & Store KPIs analytics (User gets calculated KPIs in real time and can
+                                        improve them during same visit)
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solutions__accordion">
+                        <div class="solutions__accordion-btn">
+                            Data visualization platform - Fast Business Intelligence Platform to visualize any Retail
+                            Execution Process and provide Actionable Dashboards
+
+                            <span class="solutions__accordion-btn-plus">
+
+                            </span>
+                        </div>
+                        <div class="solutions__accordion-content">
+                            <div class="solutions__accordion-content-inner">
+                                <ol>
+                                    <li>
+                                        In Store Task management (Mobile field sales force user can get a task for each
+                                        store visit)
+                                    </li>
+                                    <li>
+                                        Photo quality checks (User can take a high quality photo of the shelf with
+                                        built-in guidelines)
+                                    </li>
+                                    <li>
+                                        Shelf & Store KPIs analytics (User gets calculated KPIs in real time and can
+                                        improve them during same visit)
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="why-ailet js-key-scrolling-block" id="why">
+    <div class="why-ailet__shape">
+        <img src="img/shape.svg" alt="" class="why-ailet__shape-image">
+    </div>
+    <div class="container">
+        <h2 class="why-ailet__heading">
+            Why Ailet?
+        </h2>
+        <div class="why-ailet__benefits">
+            <div class="why-ailet__benefits-col">
+                <div class="why-ailet__benefits-card">
+                    <img src="img/benefits-icons/1.svg" alt="" class="why-ailet__benefits-card-icon">
+                    <div class="why-ailet__benefits-card-content">
+                        <h4 class="why-ailet__benefits-card-heading">
+                            Trustworthy solution
+                        </h4>
+                        <div class="why-ailet__benefits-card-text">
+                            Our solution is daily used by 10 000 mobile users in all continents. We recognize 1B SKUs
+                            from 6M photos per month from 500k stores
+                        </div>
+                    </div>
+                </div>
+                <div class="why-ailet__benefits-card">
+                    <img src="img/benefits-icons/2.svg" alt="" class="why-ailet__benefits-card-icon">
+                    <div class="why-ailet__benefits-card-content">
+                        <h4 class="why-ailet__benefits-card-heading">
+                            Master Data is our pain
+                        </h4>
+                        <div class="why-ailet__benefits-card-text">
+                            Just let us know which competitors you care most about and let us find all other
+                            information. We give you a ready to use competitor intelligence solution with no efforts on
+                            your side.
+                        </div>
+                    </div>
+                </div>
+                <div class="why-ailet__benefits-card">
+                    <img src="img/benefits-icons/3.svg" alt="" class="why-ailet__benefits-card-icon">
+                    <div class="why-ailet__benefits-card-content">
+                        <h4 class="why-ailet__benefits-card-heading">
+                            Technology leadership
+                        </h4>
+                        <div class="why-ailet__benefits-card-text">
+                            Ailet is recognized as a key player in image recognition in the Retail market
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-ailet__benefits-col">
+                <div class="why-ailet__benefits-card">
+                    <img src="img/benefits-icons/4.svg" alt="" class="why-ailet__benefits-card-icon">
+                    <div class="why-ailet__benefits-card-content">
+                        <h4 class="why-ailet__benefits-card-heading">
+                            Flexibility
+                        </h4>
+                        <div class="why-ailet__benefits-card-text">
+                            Our Platform is flexible and agile. You can use the solution standalone or integrated inside
+                            SFA/CRM. We simplify current data integrations between all SFA components. Any region, store
+                            format, general or traditional trade
+                        </div>
+                    </div>
+                </div>
+                <div class="why-ailet__benefits-card">
+                    <img src="img/benefits-icons/5.svg" alt="" class="why-ailet__benefits-card-icon">
+                    <div class="why-ailet__benefits-card-content">
+                        <h4 class="why-ailet__benefits-card-heading">
+                            Faster than ever before
+                        </h4>
+                        <div class="why-ailet__benefits-card-text">
+                            We believe that each minute counts. Manage your retail execution dynamically. Save time,
+                            Save money, Win your competitors
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="trusted-partners js-key-scrolling-block" id="partners">
+    <div class="container">
+        <div class="trusted-partners__wrapper">
+
+
+            <div class="trusted-partners__top-row">
+                <div class="trusted-partners__content">
+                    <h2 class="trusted-partners__heading">
+                        Trusted Partners
+
+                        <svg width="18" height="18" aria-hidden="true" class="icon icon-persons">
+                            <use xlink:href="#persons" />
+                        </svg>
+                    </h2>
+                    <div class="trusted-partners__text">
+                        <p>
+                            We do believe that our customer success is based on partner success. Our Platform can be
+                            integrated with any SFA, CRM, Field Marketing and Crowd Solutions. Our image recognition
+                            component can empower your salesforce and add valuable analytical capabilities to your end
+                            customers.
+                        </p>
+                        <a href="#" class="trusted-partners__become-a-partner js-form-open">
+                            <span class="trusted-partners__become-a-partner-text">
+                                become a partner
+                            </span>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="trusted-partners__amount">
+                    <div class="trusted-partners__amount-digit">
+                        20
+                    </div>
+                    <div class="trusted-partners__amount-text">
+                        partners globally
+                    </div>
+                </div>
+            </div>
+
+            <div class="trusted-partners__logos">
+                <a href="#" class="trusted-partners__logo">
+                    <img src="img/partners/1.png" alt="" class="trusted-partners__logo-image">
+                </a>
+                <a href="#" class="trusted-partners__logo">
+                    <img src="img/partners/2.png" alt="" class="trusted-partners__logo-image">
+                </a>
+                <a href="#" class="trusted-partners__logo">
+                    <img src="img/partners/3.png" alt="" class="trusted-partners__logo-image">
+                </a>
+                <a href="#" class="trusted-partners__logo">
+                    <img src="img/partners/4.png" alt="" class="trusted-partners__logo-image">
+                </a>
+                <a href="#" class="trusted-partners__logo">
+                    <img src="img/partners/5.png" alt="" class="trusted-partners__logo-image">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="clients js-key-scrolling-block">
+    <div class="container">
+        <h2 class="clients__heading">
+            Clients
+
+            <a href="#" class="trusted-partners__become-a-partner js-form-open">
+                <span class="trusted-partners__become-a-partner-text">
+                    case studies
+                </span>
+
+            </a>
+        </h2>
+        <div class="clients__sliders">
+            <div class="clients__slider js-clients-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/1.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/2.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/3.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/1.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/2.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients__slider js-clients-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/4.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/5.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/6.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/4.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__slider-card">
+                                <img src="img/clients/5.png" alt="" class="clients__slider-card-image">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ai js-key-scrolling-block">
+    <div class="container">
+        <div class="ai__card">
+            <img src="img/ai-bg.svg" alt="" class="ai__card-bg">
+            <h2 class="ai__card-heading">
+                Get Started, Contact us!
+            </h2>
+            <div class="ai__card-text">
+                If you have any questions or would like a consultation<br> or a demo, contact us!
+            </div>
+            <a href="#" class="ai__card-link js-form-open" data-text="Get in touch">
+                <span class="ai__card-link-text">
+                    Get in touch
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+        </main>
+        <footer class="page-footer js-key-scrolling-block" id="contacts">
+            <div class="page-footer__bg">
+                <div class="page-footer__bg-layer">
+                    <img src="img/maps/map-1.jpg" alt="" class="page-footer__bg-layer-image">
+                    <div class="page-footer__bg-pin" style="top: 45%; right: 20%;">
+                        <a href="#" class="page-footer__bg-pin-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon icon-pin">
+                                <use xlink:href="#pin" />
+                            </svg>
+                        </a>
+                        <div class="page-footer__pin-dropdown">
+                            <div class="page-footer__pin-dropdown-inner">
+                                <h4 class="page-footer__pin-dropdown-heading">
+                                    Office EU
+                                </h4>
+                                <div class="page-footer__pin-dropdown-text">
+                                    <p>
+                                        Pasilankatu 2, 00240 Helsinki, Finland
+                                        <a href="tel:+3580931589580">+358 (0) 9 3158 9580</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-footer__bg-pin" style="top: 52%; right: 12%;">
+                        <a href="#" class="page-footer__bg-pin-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon icon-pin">
+                                <use xlink:href="#pin" />
+                            </svg>
+                        </a>
+                        <div class="page-footer__pin-dropdown">
+                            <div class="page-footer__pin-dropdown-inner">
+                                <h4 class="page-footer__pin-dropdown-heading">
+                                    Office EU
+                                </h4>
+                                <div class="page-footer__pin-dropdown-text">
+                                    <p>
+                                        Pasilankatu 2, 00240 Helsinki, Finland
+                                        <a href="tel:+3580931589580">+358 (0) 9 3158 9580</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                </div>
+                <div class="page-footer__bg-layer" data-map-layer="us">
+                    <img src="img/maps/map-2.jpg" alt="" class="page-footer__bg-layer-image">
+                    <div class="page-footer__bg-pin" style="top: 68%; right: 25%;">
+                        <a href="#" class="page-footer__bg-pin-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon icon-pin">
+                                <use xlink:href="#pin" />
+                            </svg>
+                        </a>
+                        <div class="page-footer__pin-dropdown">
+                            <div class="page-footer__pin-dropdown-inner">
+                                <h4 class="page-footer__pin-dropdown-heading">
+                                    Office EU
+                                </h4>
+                                <div class="page-footer__pin-dropdown-text">
+                                    <p>
+                                        Pasilankatu 2, 00240 Helsinki, Finland
+                                        <a href="tel:+3580931589580">+358 (0) 9 3158 9580</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="page-footer__content">
+                    <div class="page-footer__logo">
+                        <img src="img/logo-colored.svg" alt="" class="page-footer__logo-image">
+                        Contacts
+                    </div>
+        
+                    <div class="page-footer__contacts">
+                        <div class="page-footer__contacts-item">
+                            <h4 class="page-footer__contacts-heading">
+                                <a href="#" data-toggle-map-layer="us">
+                                    US HQ
+                                </a>
+        
+                            </h4>
+                            <div class="page-footer__contacts-text">
+                                9 The Green, Ste A, City of Dover County of Kent, zip code 19901, Delaware, the United States
+                                ofAmerica
+                                tel: <a href="tel:+1(302)608-9033">+1&nbsp;(302)&nbsp;608-9033</a>
+                            </div>
+                        </div>
+                        <div class="page-footer__contacts-item">
+                            <h4 class="page-footer__contacts-heading">
+                                R&D Office Moscow
+                            </h4>
+                            <div class="page-footer__contacts-text">
+                                143026, Moscow, Bolshoy boulevard 42/1, Skolkovo center territory
+                                tel: <a href="tel:+7 (499) 550-34-63">+7&nbsp;(499)&nbsp;550-34-63</a>
+                            </div>
+                        </div>
+                        <div class="page-footer__contacts-item">
+                            <h4 class="page-footer__contacts-heading">
+                                Office EU
+                            </h4>
+                            <div class="page-footer__contacts-text">
+                                Pasilankatu 2, 00240 Helsinki, Finland <a
+                                    href="tel:+358 (0) 9 3158 9580">+358&nbsp;(0)&nbsp;9&nbsp;3158
+                                    9580</a>
+                            </div>
+                        </div>
+                        <div class="page-footer__contacts-item">
+                            <h4 class="page-footer__contacts-heading">
+                                <a href="#">
+                                    Office Turkey & Middle East
+                                </a>
+                            </h4>
+                            <h4 class="page-footer__contacts-heading">
+                                <a href="#">
+                                    Office Brazil & Latin America
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+        
+                    <div class="page-footer__bottom-panel">
+                        <div class="page-footer__copyright">
+                            © ООО «Ailet», 2020
+                        </div>
+        
+                        <a href="#" class="page-footer__policy">
+                            Data processing policy
+                        </a>
+        
+                        <a href="#" class="page-footer__made-by">
+                            Site creation
+        
+                            <img src="img/mark-weber.svg" alt="" class="page-footer__made-by-logo" width="65">
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </footer>        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="assets/js/backend.js"></script>
+    </div>
+</body>
+
+</html>
