@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export default function KeyScrolling() {
     const blocks = Array.from(document.querySelectorAll('.js-key-scrolling-block'));
-    const debug = false;
+    const debug = true;
 
     if (debug) console.log('Blocks count', blocks.length)
 
